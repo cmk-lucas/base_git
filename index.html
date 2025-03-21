@@ -5,67 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-<<<<<<< HEAD
+        /* Assurer que la page prend toute la hauteur */
+        html, body {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenu principal qui pousse le footer vers le bas */
+        .content {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Footer qui reste collé en bas */
+        footer {
+            background-color: #ff8c00; /* Orange vif */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-logo h2 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-socials a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 20px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .footer-socials a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-text {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
         /* ✅ HEADER STYLE */
-header {
-    background-color: #ff8c00;
-    padding: 15px 0;
-    width: 100%;
-    top: 0;
-    left: 0;
-    
+        header {
+            background-color: #ff8c00;
+            padding: 15px 0;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
 
-    /* ✅ STYLE DE LA NAVIGATION */
-nav {
-    max-width: 1200px;
-    margin: auto;
-}
+        /* ✅ STYLE DE LA NAVIGATION */
+        nav {
+            max-width: 1200px;
+            margin: auto;
+        }
 
-/* ✅ LISTE DU MENU */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
+        /* ✅ LISTE DU MENU */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
 
-/* ✅ ÉLÉMENTS DU MENU */
-nav ul li {
-    margin: 0 15px;
-}
+        /* ✅ ÉLÉMENTS DU MENU */
+        nav ul li {
+            margin: 0 15px;
+        }
 
-/* ✅ LIENS DU MENU */
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
+        /* ✅ LIENS DU MENU */
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
 
-/* ✅ Effet au survol */
-nav ul li a:hover {
-    background-color: white;
-    color: #ff8c00;
-    border-radius: 5px;
-}
+        /* ✅ Effet au survol */
+        nav ul li a:hover {
+            background-color: white;
+            color: #ff8c00;
+            border-radius: 5px;
+        }
 
-/* ✅ Ajustement pour mobile */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
+        /* ✅ Ajustement pour mobile */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-}
+            nav ul li {
+                margin: 10px 0;
+            }
 
-}
-        
+            .footer-links a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .footer-socials {
+                margin-top: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -79,131 +162,31 @@ nav ul li a:hover {
             </ul>
         </nav>
     </header>
-=======
-       /* Assurer que la page prend toute la hauteur */
-html, body {
-    height: 100%;
-    margin: 0;
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-}
 
-/* Contenu principal qui pousse le footer vers le bas */
-.content {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
+    <div class="content">
+        <h1>Bienvenue sur Unispace</h1>
+        <p>Un réseau social moderne en HTML, CSS et JavaScript.</p>
+    </div>
 
-/* Footer qui reste collé en bas */
-footer {
-    background-color: #ff8c00; /* Orange vif */
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo h2 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.footer-links {
-    margin: 10px 0;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-socials a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    color: white;
-    transition: 0.3s;
-}
-
-.footer-socials a:hover {
-    transform: scale(1.2);
-}
-
-.footer-text {
-    margin-top: 10px;
-    font-size: 14px;
-    opacity: 0.8;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-links a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .footer-socials {
-        margin-top: 10px;
-    }
-}
-
-    </style>
-</head>
-<body>
-    
-    
-    
-        <div class="content">
-            <h1>Bienvenue sur Unispace</h1>
-            <p>Un réseau social moderne en HTML, CSS et JavaScript.</p>
-        </div>
-    
-        <footer>
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <h2>Unispace</h2>
-                </div>
-                <div class="footer-links">
-                    <a href="#">À propos</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
-                <div class="footer-socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <p class="footer-text">© 2025 Unispace - Tous droits réservés.</p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Unispace</h2>
             </div>
-        </footer>
-    
-
-    
->>>>>>> 1a18762955718041917b0c4bb0398f3779813ea9
+            <div class="footer-links">
+                <a href="#">À propos</a>
+                <a href="#">Contact</a>
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="footer-text">© 2025 Unispace - Tous droits réservés.</p>
+        </div>
+    </footer>
 </body>
 </html>
